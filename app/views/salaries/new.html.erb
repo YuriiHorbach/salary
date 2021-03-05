@@ -1,0 +1,20 @@
+<h1>Add salary</h1>
+
+<%= form_for @salary do |f| %>
+  <p>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Second name" %> <br>
+    <%= f.text_field :s_name %>
+  </p>
+  <p>
+    <%= f.label "Salary" %> <br>
+    <%= f.number_field :salary_amount %>
+  </p>
+
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

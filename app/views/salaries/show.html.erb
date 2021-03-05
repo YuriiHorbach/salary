@@ -1,0 +1,9 @@
+<h1><%= @salary.name %>`s salary</h1>
+
+<p>Total salary</p>
+<b><%= @salary.salary_amount %> USD</b>
+<br>
+<p><%= link_to("Main page", salaries_path) %>
+ ||
+   <%= link_to("Edit page", edit_salary_path) %>
+</p>

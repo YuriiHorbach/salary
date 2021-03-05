@@ -1,0 +1,7 @@
+<h1><%= pluralize(@salaries.size, 'Salary') %></h1>
+
+<% @salaries.each do |salary| %>
+  <p><%= link_to(salary.name, salary) %></p>
+<% end %>
+
+<%= link_to "Add salary", new_salary_path %>
